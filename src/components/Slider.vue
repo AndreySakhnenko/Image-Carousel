@@ -14,13 +14,13 @@
                 ></use>
               </svg>
             </a>
-            <a :href="image.url" target="_blank" class="download_link">
+            <!-- <a :href="image.url" target="_blank" class="download_link">
             <svg class="icon_svg">
               <use
-                xlink:href="../assets/link.svg#link"
+                xlink:href="../assets/sprite-svg/link.svg#link"
               ></use>
             </svg>
-          </a>         
+          </a>          -->
           </div>
           <div class="card_bot">
             <p class="author">{{ image.author }}</p>
