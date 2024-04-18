@@ -8,6 +8,8 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  transpileDependencies: true,
+  publicPath: "/Image-Carousel/",
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
