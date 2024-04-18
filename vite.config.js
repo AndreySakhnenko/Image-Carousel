@@ -5,14 +5,8 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/Image-Carousel/",
   plugins: [
     vue(),
   ],
-  transpileDependencies: true,
-  publicPath: "/Image-Carousel/",
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
 })
