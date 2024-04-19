@@ -3,7 +3,7 @@
     <h3>Обрані зображення:</h3>
     <ul class="selected_list">
       <li class="selected_item" v-for="selectedImage in selectedImages" :key="selectedImage.id">
-        <span>{{ selectedImage.author }}</span>
+        <span class="selected_text">{{ selectedImage.author }}</span>
         <a :href="selectedImage.url" target="_blank">{{ selectedImage.url }}</a>
         <button class="selected_btn" @click="removeFromSelectedImages(selectedImage)">
           <img src="../assets/img/delete.svg" alt="delete"/>   
@@ -39,6 +39,7 @@ const removeFromSelectedImages = (image) => {
   display: flex;
   align-items: center;
   gap: 5px;
+  justify-content: space-between;
 }
 .selected_btn{
   border: none;
@@ -48,6 +49,8 @@ const removeFromSelectedImages = (image) => {
   padding: 0;
 }
 @media (max-width: 500px) {
-
+.selected_text{
+  display: none;
+}
 }
 </style>
