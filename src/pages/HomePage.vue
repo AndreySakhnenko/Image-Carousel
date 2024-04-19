@@ -41,6 +41,9 @@ onMounted(fetchImages);
 </script>
 
 <style scoped>
+main{
+  height: 100vh;
+}
 .section {
   padding: 55px 0;
   display: flex;
