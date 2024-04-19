@@ -8,11 +8,12 @@
           <p class="image-id">{{ image.id }}</p>
           <div class="svg_links">
             <a :href="image.download_url" target="_blank" class="download_link">
-              <svg class="icon_svg">
+              <!-- <svg class="icon_svg">
                 <use
                   xlink:href="../assets/sprite-svg/download.svg#download"
                 ></use>
-              </svg>
+              </svg> -->
+              <img class="icon_svg" src="../assets/img/download.svg" alt="download"/>
             </a>
             <a :href="image.url" target="_blank" class="download_link">
               <img src="../assets/111.svg" alt="123"/>
@@ -26,9 +27,10 @@
           <div class="card_bot">
             <p class="author">{{ image.author }}</p>
             <button @click="addToSelectedImages(image)" class="btn_add">
-              <svg class="icon_svg">
+              <!-- <svg class="icon_svg">
                 <use xlink:href="../assets/sprite-svg/add.svg#add"></use>
-              </svg>
+              </svg> -->
+              <img class="icon_svg" src="../assets/img/add.svg" alt="add"/>
             </button>
           </div>
         </div>
