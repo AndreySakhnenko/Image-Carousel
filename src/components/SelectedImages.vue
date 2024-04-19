@@ -6,7 +6,7 @@
         <span>{{ selectedImage.author }}</span>
         <a :href="selectedImage.url" target="_blank">{{ selectedImage.url }}</a>
         <button class="selected_btn" @click="removeFromSelectedImages(selectedImage)">
-          <img src="../assets/delete.svg" alt="delete"/>   
+          <img src="../assets/img/delete.svg" alt="delete"/>   
         </button>
       </li>
     </ul>
